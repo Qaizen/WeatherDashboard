@@ -13,14 +13,48 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/asset/css/style.css" />
 </head>
 
 <body class="flex-column min-100-vh">
     <header class="hero">
         <h1 class="bigTitle">Weather Dashboard</h1>
-        <p>Find a Forecast</p>
+        <!-- <p>Find a Forecast</p> -->
     </header>
-    
+    <!-- Biggest container -->
+    <main class="container row col-12">
+        <div class="leftSearchContainer col-12 col-md-4">
+<!-- left search column top -->
+<div class="leftTop">
+    <h2 class="card-header text-uppercase">Search for a City</h2>
+    <form id="cityForm" class="cardBody"></form>
+    <label class="formLabel" for="city"></label>
+    <!-- name="cityName": gives the input a name of "cityName".
+id="cityName": gives the input an id of "cityName".
+type="text": specifies that the input is of type text.
+autofocus="true": sets the input to automatically get focus when the page loads.
+class="formInput": gives the input a class name of "formInput".
+placeholder="City Name": displays "City Name" as a placeholder text in the input field. -->
+    <input name="cityName" id="cityName" type="text" autofocus="true" class="formInput" placeholder="City Name"/>
+    <button type="submit" class="btn">Search</button>
+    </form>
+</div>
+        </div>
+        <!-- left search column bottom -->
+        <div class="leftBottom">
+            <div id="searchedCityContainer" class="citylist text-uppercase">City History</div>
+            <button type="submit" class="cityButton" id="history-0"></button>
+        </div>
+    </div>
+     <!-- right column top -->
+     <div class="rightTop text">
+        <h2 class="cityTitle"><span id="dataSearchItem"></span></h2>
+        <!-- enter temp, wind, humidity, UV index -->
+     </div>
+    </main>
 </body>
 </html>
