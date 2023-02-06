@@ -15,7 +15,7 @@ body {
     padding: 3% ;
 }
 
-/* .hero:after {
+.hero:after {
     content: "";
     display: block;
     position: relative;
@@ -23,11 +23,11 @@ body {
     padding-top: 15px;
     border-bottom: 1px solid #557b8a; 
     width: 100%;
-} */
+}
 
 /* bigTitle; */
 h1 {
-    background-color: black;
+    background-color: gray;
     color: white;
     text-align: center;
     padding: 2px;    
@@ -44,3 +44,73 @@ p {
     background-color: white;
     border: 1px solid black;
 }
+
+.flexColumn {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+}
+
+.min-100-vh {
+min-height: 100vh;
+}
+
+.leftTop {
+    margin: o;
+    padding: 30px;
+}
+
+.cityForm {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+} 
+
+.formLabel .formInput {
+display: block;
+}
+
+.formInput {
+    width: 100%;
+    padding: 3%;
+    margin: 5px;
+    font-size: 1.0rem;
+}
+
+.leftBottom {
+    padding: 20px;
+}
+
+.cityList {
+    padding: 0;
+    list-style: none;
+}
+.btn .cityButton {
+    border: 1px solid gray;
+    margin-top: 3px;
+    font-size: 1.0rem;
+    padding: 6px 5px;
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    background-color: black;
+    border-radius: 6px;
+}
+
+.btn:hover, .cityButton:hover {
+    background-color: gray;
+}
+
+.rightTop {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    height: 275px;
+    border-radius: 5px;
+    padding: 30px 50px;
+    display: block;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    background-color: gray;
+
+}
+
