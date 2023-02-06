@@ -1,0 +1,46 @@
+*{
+/* border */
+box-sizing: border-box;
+}
+
+
+body {
+    /* background image? */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero {
+    padding: 3% ;
+}
+
+/* .hero:after {
+    content: "";
+    display: block;
+    position: relative;
+    margin-top: 0;
+    padding-top: 15px;
+    border-bottom: 1px solid #557b8a; 
+    width: 100%;
+} */
+
+/* bigTitle; */
+h1 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2px;    
+}
+ 
+/* search for city */
+p {
+    font-weight: bold;
+}
+
+/* left column */
+
+.cardHeader {
+    background-color: white;
+    border: 1px solid black;
+}
