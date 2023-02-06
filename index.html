@@ -25,9 +25,11 @@
         <h1 class="bigTitle">Weather Dashboard</h1>
         <!-- <p>Find a Forecast</p> -->
     </header>
+
     <!-- Biggest container -->
     <main class="container row col-12">
         <div class="leftSearchContainer col-12 col-md-4">
+
 <!-- left search column top -->
 <div class="leftTop">
     <h2 class="card-header text-uppercase">Search for a City</h2>
@@ -44,17 +46,55 @@ placeholder="City Name": displays "City Name" as a placeholder text in the input
     </form>
 </div>
         </div>
+
         <!-- left search column bottom -->
         <div class="leftBottom">
             <div id="searchedCityContainer" class="citylist text-uppercase">City History</div>
             <button type="submit" class="cityButton" id="history-0"></button>
         </div>
     </div>
-     <!-- right column top -->
+
+     <!-- right side top -->
      <div class="rightTop text">
         <h2 class="cityTitle"><span id="dataSearchItem"></span></h2>
         <!-- enter temp, wind, humidity, UV index -->
+        <div id="cityContainer" class="cityInfo"></div>
+     </div>
+
+     <!-- right side bottom <div class="rightBottom row">: This is an HTML tag that creates a division (container) on the web page with a class name of "rightBottom" and a class name of "row".
+
+<h3 class="dayForecast text-uppercase">5 Day Forecast</h3>: This is a header tag that displays a title "5 Day Forecast" in h3 size with class names "dayForecast" and "text-uppercase".
+
+<div class="card">: This is a division tag that creates a container with a class name of "card".
+
+<h4 class="cardHeader" id="forecastDay1"></h4>: This is a header tag that displays a title in h4 size with a class name of "cardHeader" and an id of "forecastDay1".
+
+<div id="cardDay1"></div>: This is a division tag that creates a container with an id of "cardDay1". -->
+     <div class="rightBottom row">
+        <h3 class="dayForecast text-uppercse">5 Day Forecast</h3>
+        <div class="card">
+            <h4 class="cardHeader" id="forecastDay1"></h4>
+            <div id="cardDay1"></div>
+        </div>
+    </div>
+    <div class="card">
+        <h4 class="cardHeader" id="forecastDay2"></h4>
+        <div id="cardDay2"></div>
+    </div>
+    <div class="card">
+        <h4 class="cardHeader" id="forecastDay3"></h4>
+        <div id="cardDay3"></div>
+    </div>
+    <div class="card">
+        <h4 class="cardHeader" id="forecastDay4"></h4>
+        <div id="cardDay4"></div>
+    </div>
+    <div class="card">
+        <h4 class="cardHeader" id="forecastDay5"></h4>
+        <div id="cardDay5"></div>
+    </div>
      </div>
     </main>
+    <!-- link moment and javascript here -->
 </body>
 </html>
