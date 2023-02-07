@@ -10,61 +10,61 @@
     <link rel="stylesheet" href="./asset/css/style.css" />
     <title>Weather Dashboard</title>
 </head>
-<body class="flexColumn min-100-vh">
+<body class="flex-column min-100-vh">
     <header class="hero">
-        <h1 class="bigTitle">Weather Dashboard</h1>
+        <h1 class="w-title">Weather Dashboard</h1>
     </header>
 
     <main class="container row col-12">
-        <div class="leftContainer col-12 col-md-4">
-            <!-- Left side container top column -->
-            <div class="leftTop">
-                <h3 class="cardHeader text-uppercase">Search for a City</h3>
-                <form id="cityForm" class="cardBody">
-                    <label class="formLabel" for="city"></label>
-                    <input name="cityName" id="city-name" type="text" autofocus="true" class="formInput" placeholder="City Name"/>
+        <div class="left-container col-12 col-md-4">
+            <!-- Left side- top column -->
+            <div class="left-top">
+                <h3 class="card-header text-uppercase">Search for a City</h3>
+                <form id="city-form" class="card-body">
+                    <label class="form-label" for="city"></label>
+                    <input name="city-name" id="city-name" type="text" autofocus="true" class="form-input" placeholder="City Name"/>
                     <button type="submit" class="btn">Search</button>
                 </form>
             </div>
-            <!-- Left container bottom column -->
-            <div class="leftBottom">
-                <div id="searchedCityList" class="cityHistory text-uppercase">City History</div>
-                <button type="submit" class="cityBtn" id="history-0"></button>
+            <!-- Left side- bottom column -->
+            <div class="left-bottom">
+                <div id="searchedCityContainer" class="city-group text-uppercase">City History</div>
+                <button type="submit" class="city-btn" id="history-0"></button>
             </div>
         </div>
-        <div class="rightContainer col-12 col-md-8">
-            <!-- Right container top column -->
-            <div class="rightTop text">
-                <h2 class="cityTitle"><span id="dataSearchItem"></span></h2>
+        <div class="right-container col-12 col-md-8">
+            <!-- Right side-top column -->
+            <div class="right-top text">
+                <h2 class="city-title"><span id="data-search-term"></span></h2>
                 <!-- Enter temp, wind, humidity, UV Index -->
-                <div id="cityContainer" class="cityInfo"></div>
+                <div id="city-container" class="city-info"></div>
             </div>
-            <!-- Right contrainer bottom column -->
-            <div class="rightBottom row">
-                <h3 class="dayForecast text-uppercase">5-Day Forecast</h3>
+            <!-- Right side- bottom column -->
+            <div class="right-bottom row">
+                <h3 class="day-forecast text-uppercase">5-Day Forecast</h3>
                 <div class="card">
-                    <h4 class="cardHeader" id="forecastDate1"></h4>
-                    <div id="cardDate1">
+                    <h4 class="card-header" id="forecastDate1"></h4>
+                    <div id="card-date-1">
                     </div>
                 </div>
                 <div class="card">
-                    <h4 class="cardHeader" id="forecastDate2"></h4>
-                    <div id="cardDate2">
+                    <h4 class="card-header" id="forecastDate2"></h4>
+                    <div id="card-date-2">
                     </div>
                 </div>
                 <div class="card">
-                    <h4 class="cardHeader" id="forecastDate3"></h4>
-                    <div id="cardDate3">
+                    <h4 class="card-header" id="forecastDate3"></h4>
+                    <div id="card-date-3">
                     </div>
                 </div>
                 <div class="card">
-                    <h4 class="cardHeader" id="forecastDate4"></h4>
-                    <div id="cardDate4">
+                    <h4 class="card-header" id="forecastDate4"></h4>
+                    <div id="card-date-4">
                     </div>
                 </div>
                 <div class="card">
-                    <h4 class="cardHeader" id="forecastDate5"></h4>
-                    <div id="cardDate5">
+                    <h4 class="card-header" id="forecastDate5"></h4>
+                    <div id="card-date-5">
                     </div>
                 </div>
             </div>

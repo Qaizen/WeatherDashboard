@@ -21,18 +21,18 @@ h1 {
 
 /* Left side column  */
 
-.cardHeader {
+.card-header {
     border: 1px solid black;
 }
 
-.cityHistory {
+.city-group {
     font-size: 1.2rem;
     margin-bottom: 5px;
     font-weight: bold;
     color: white;
 }
 
-.flexColumn {
+.flex-column {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -42,32 +42,32 @@ h1 {
     min-height: 100vh;
 }
 
-.leftContainer {
+.left-container {
     margin: 0;
     padding: 30px;
 }
 
-.formLabel, .formInput {
+.form-label, .form-input {
   display: block;
 }
 
-.formInput {
+.form-input {
     width: 100%;
     padding: 3%;
     margin: 5px 0;
     font-size: 1.0rem;
 }
 
-.leftBottom {
+.left-bottom {
     padding: 20px;
 }
 
-.cityHistory {
+.city-group {
     padding: 0;
     list-style: none;
 }
 
-.btn, .cityBtn {
+.btn, .city-btn {
     border: 1px solid gray;
     margin-top: 3px;
     font-size: 1.0rem;
@@ -79,13 +79,13 @@ h1 {
     border-radius: 6px;
 }
 
-.btn:hover, .cityBtn:hover {
+.btn:hover, .city-btn:hover {
     background-color:#a3bdc7;
 }
 
 /* right side */
 
-.rightTop {
+.right-top {
     margin-top: 20px;
     margin-bottom: 20px;
     border: 1px solid #5d8696;
@@ -126,11 +126,11 @@ h4 {
     font-size: 1.0rem;
 }
 
-.rightBottom {
+.right-bottom {
     margin: 0;
 }
 
-.dayForecast {
+.day-forecast {
     width: 100%;
     margin: 5px;
 }
