@@ -1,9 +1,7 @@
 # WeatherDashboard
-# 05 Third-Party APIs: Work Day Scheduler
 
 ## Description
-Simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
-
+Simple Weather Dashboard with option so search for city name. Results are displayed for curernt day and 5 day forecast. Also search history (city history) is locally stored for quick access.
 
 
 ## Installation
@@ -11,7 +9,7 @@ Simple calendar application that allows a user to save events for each hour of t
 N/A
 
 ## Usage
-Select a time block and enter your text. Click the save icon. Your input should remain. 
+Enter city name into search box. Results are shown. Refersh and see locally stored search city history.  
 
 
 ## Link to live website
@@ -20,8 +18,8 @@ Select a time block and enter your text. Click the save icon. Your input should 
 
 ## Link to github repository
 
-[link](https://github.com/Qaizen/WorkDayScheduler)
+[link](https://github.com/Qaizen/WeatherDashboard)
 
-## PW generator web app screenshot
+## Weather Dashboard web app screenshot
 
 ![Screenshot](/assets/images/WorkDay1.jpeg)
