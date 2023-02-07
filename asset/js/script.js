@@ -1,7 +1,7 @@
 var cityForm = document.querySelector("#city-form");
-var cityNameInput = document.querySelector("#city-name");       //form input
+var cityNameInput = document.querySelector("#city-name");    
 var cityContainer = document.querySelector("#city-container");
-var dataSearchTerm = document.querySelector("#data-search-term"); //City: results
+var dataSearchTerm = document.querySelector("#data-search-term"); 
 
 let city = document.getElementById('city-name').value;
 
@@ -54,6 +54,7 @@ var getCityData = function(city) {
   
                 //make a 2nd url request for the weather data
                 var apiUrl2 = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=imperial&exclude=minutely,hourly,alerts&appid=${api_key}`;  
+                
                 
                 fetch(apiUrl2).then(function(response){
                     response.json().then(function(data) {
