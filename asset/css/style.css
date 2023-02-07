@@ -83,7 +83,7 @@ p {
     list-style: none;
 }
 
-.btn, .city-btn {
+.btn, .cityBtn {
     border: 1px solid gray;
     margin-top: 3px;
     font-size: 1.0rem;
@@ -95,7 +95,7 @@ p {
     border-radius: 6px;
 }
 
-.btn:hover, .city-btn:hover {
+.btn:hover, .cityBtn:hover {
     background-color:#a3bdc7;
 }
 
