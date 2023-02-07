@@ -4,101 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- link css, jquery, bootstrap -->
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./asset/css/style.css" />
     <title>Weather Dashboard</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    
-    <link rel="stylesheet" href="/asset/css/style.css" />
 </head>
-
 <body class="flexColumn min-100-vh">
     <header class="hero">
         <h1 class="bigTitle">Weather Dashboard</h1>
-        <!-- <p>Find a Forecast</p> -->
     </header>
 
-    <!-- Biggest container -->
     <main class="container row col-12">
-        <div class="leftSearchContainer col-12 col-md-4">
-
-<!-- left search column top -->
-<div class="leftTop">
-    <h2 class="cardHeader text-uppercase">Search for a City</h2>
-    <form id="cityForm" class="cardBody"></form>
-    <label class="formLabel" for="city"></label>
-    <!-- name="cityName": gives the input a name of "cityName".
-id="cityName": gives the input an id of "cityName".
-type="text": specifies that the input is of type text.
-autofocus="true": sets the input to automatically get focus when the page loads.
-class="formInput": gives the input a class name of "formInput".
-placeholder="City Name": displays "City Name" as a placeholder text in the input field. -->
-    <input name="cityName" id="cityName" type="text" autofocus="true" class="formInput" placeholder="City Name"/>
-    <button type="submit" class="btn">Search</button>
-    </form>
-</div>
+        <div class="leftContainer col-12 col-md-4">
+            <!-- Left side container top column -->
+            <div class="leftTop">
+                <h3 class="cardHeader text-uppercase">Search for a City</h3>
+                <form id="cityForm" class="cardBody">
+                    <label class="formLabel" for="city"></label>
+                    <input name="cityName" id="city-name" type="text" autofocus="true" class="formInput" placeholder="City Name"/>
+                    <button type="submit" class="btn">Search</button>
+                </form>
+            </div>
+            <!-- Left container bottom column -->
+            <div class="leftBottom">
+                <div id="searchedCityList" class="cityHistory text-uppercase">City History</div>
+                <button type="submit" class="city-btn" id="history-0"></button>
+            </div>
         </div>
-
-        <!-- left search column bottom -->
-        <div class="leftBottom">
-            <div id="searchedCityContainer" class="citylist text-uppercase">City History</div>
-            <button type="submit" class="cityButton" id="history-0"></button>
+        <div class="rightContainer col-12 col-md-8">
+            <!-- Right side-top column -->
+            <div class="rightTop text">
+                <h2 class="cityTitle"><span id="dataSearchItem"></span></h2>
+                <!-- Enter temp, wind, humidity, UV Index -->
+                <div id="cityContainer" class="cityInfo"></div>
+            </div>
+            <!-- Right side- bottom column -->
+            <div class="rightBottom row">
+                <h3 class="dayForecast text-uppercase">5-Day Forecast</h3>
+                <div class="card">
+                    <h4 class="cardHeader" id="forecastDate1"></h4>
+                    <div id="card-date-1">
+                    </div>
+                </div>
+                <div class="card">
+                    <h4 class="card-header" id="forecastDate2"></h4>
+                    <div id="card-date-2">
+                    </div>
+                </div>
+                <div class="card">
+                    <h4 class="card-header" id="forecastDate3"></h4>
+                    <div id="card-date-3">
+                    </div>
+                </div>
+                <div class="card">
+                    <h4 class="card-header" id="forecastDate4"></h4>
+                    <div id="card-date-4">
+                    </div>
+                </div>
+                <div class="card">
+                    <h4 class="card-header" id="forecastDate5"></h4>
+                    <div id="card-date-5">
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-
-     <!-- right side top -->
-     <div class="rightTop text">
-        <h2 class="cityTitle"><span id="dataSearchItem"></span></h2>
-        <!-- enter temp, wind, humidity, UV index -->
-        <div id="cityContainer" class="cityInfo"></div>
-     </div>
-
-     <!-- right side bottom <div class="rightBottom row">: This is an HTML tag that creates a division (container) on the web page with a class name of "rightBottom" and a class name of "row".
-
-<h3 class="dayForecast text-uppercase">5 Day Forecast</h3>: This is a header tag that displays a title "5 Day Forecast" in h3 size with class names "dayForecast" and "text-uppercase".
-
-<div class="card">: This is a division tag that creates a container with a class name of "card".
-
-<h4 class="cardHeader" id="forecastDay1"></h4>: This is a header tag that displays a title in h4 size with a class name of "cardHeader" and an id of "forecastDay1".
-
-<div id="cardDay1"></div>: This is a division tag that creates a container with an id of "cardDay1". -->
-     <div class="rightBottom row">
-        <h3 class="dayForecast text-uppercse">5 Day Forecast</h3>
-        <div class="card">
-            <h4 class="cardHeader" id="forecastDay1"></h4>
-            <div id="cardDay1"></div>
-        </div>
-    </div>
-    <div class="card">
-        <h4 class="cardHeader" id="forecastDay2"></h4>
-        <div id="cardDay2"></div>
-    </div>
-    <div class="card">
-        <h4 class="cardHeader" id="forecastDay3"></h4>
-        <div id="cardDay3"></div>
-    </div>
-    <div class="card">
-        <h4 class="cardHeader" id="forecastDay4"></h4>
-        <div id="cardDay4"></div>
-    </div>
-    <div class="card">
-        <h4 class="cardHeader" id="forecastDay5"></h4>
-        <div id="cardDay5"></div>
-    </div>
-     </div>
     </main>
-    <!-- link moment and javascript here -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="/asset/js/script.js"></script>
-    <script src="/asset/js/config.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="./asset/js/script.js"></script>
+    <script src="./asset/js/config.js"></script>
 </body>
 </html>
