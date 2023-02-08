@@ -14,7 +14,7 @@ Enter city name into search box. Results are shown. Refersh and see locally stor
 
 ## Link to live website
 
-[link](https://qaizen.github.io/WorkDayScheduler/)
+[link](https://qaizen.github.io/WeatherDashboard/)
 
 ## Link to github repository
 
