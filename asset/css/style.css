@@ -4,14 +4,14 @@
 }
 body {
     background-image: url("../images/starsky.jpeg"); 
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 
 .hero {
     padding: 3% 4% 0 4%;
 }
 
-/* .hero:after {
+.hero:after {
     content: "";
     display: block;
     position: relative;
@@ -19,7 +19,7 @@ body {
     padding-top: 15px;
     border-bottom: 1px solid #557b8a; 
     width: 100%;
-} */
+}
 
 h1 {
 
@@ -32,6 +32,9 @@ h1 {
 
 .card-header {
     color: white;
+}
+.card-header2 {
+    color: black;
 }
 
 .city-group {
@@ -140,6 +143,12 @@ h4 {
     margin: 0;
 }
 
+.forecast-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .day-forecast {
     width: 100%;
     margin: 5px;
@@ -166,4 +175,6 @@ h4 {
     border: 1px solid #7f9ba6;
     font-size: .8rem;
     background-color: #e9f7fc;
+    width: 150px;
+    height: 175px;
 }
