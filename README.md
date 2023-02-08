@@ -22,4 +22,4 @@ Enter city name into search box. Results are shown. Refersh and see locally stor
 
 ## Weather Dashboard web app screenshot
 
-![Screenshot](/assets/images/WorkDay1.jpeg)
+![Screenshot](/asset/images/weatherdash_screenshot.jpeg)

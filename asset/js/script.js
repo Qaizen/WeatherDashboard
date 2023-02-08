@@ -43,12 +43,14 @@ var getCityData = function(city) {
     // format the openweathermap api url
     var apiUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${api_key}`;
 
+    // var apiURL = 'api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}'
+
     //make a request to the url for the lat/lon
     fetch(apiUrl).then(function(response) {
         if (response.ok) {
             response.json().then(function(data) {
                 const { lat, lon, name } = data[0];
-                //  console.log(data[0]);  
+                //console.log(data[0]);  
                  
                      dataSearchTerm.innerHTML = `<h2 class="city-title">${name + fullYear}</h2>`;
   
@@ -58,7 +60,7 @@ var getCityData = function(city) {
                 
                 fetch(apiUrl2).then(function(response){
                     response.json().then(function(data) {
-                        // console.log(data);
+                        //console.log(data);
                         displayData(data);  
 
                         for (i = 1; i <= 5; i++) {
@@ -134,7 +136,7 @@ document.querySelector("#history-0").addEventListener("click", (event) => {
 
 function domload() { 
 
-    var searchHistoryArray = JSON.parse(localStorage.getItem("city"));
+    var searchHistoryArray = JSON.parse(localStorage.getItem("city")) || [];
     console.log("inside dom array " + searchHistoryArray);
     console.log(searchHistoryArray);
 
@@ -147,6 +149,8 @@ function domload() {
             cityHistory.innerText = `${searchHistoryArray[0]}`;
             console.log(`${searchHistoryArray[0]}`); 
         }
+        
+        
 };
 
 domload();
